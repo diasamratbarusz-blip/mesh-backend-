@@ -1,0 +1,15 @@
+{
+  "name": "mesh-network-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "mongodb": "^6.12.0"
+  },
+  "devDependencies": {
+    "vercel": "^39.1.2"
+  }
+}
