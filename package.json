@@ -4,7 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vercel dev"
+    "dev": "vercel dev",
+    "start": "vercel dev",
+    "build": "node --check api/health.js && node --check api/network.js && node --check api/nodes.js && node --check api/links.js && node --check api/routes.js && node --check api/register-node.js && node --check api/heartbeat.js && node --check lib/database.js && node --check lib/security.js && node --check lib/network-utils.js",
+    "check": "npm run build"
   },
   "dependencies": {
     "mongodb": "^6.12.0"
